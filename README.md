@@ -7,7 +7,7 @@ Build with maven:
 
     mvn package
 
-Or simply download a pre-built jar from [releases](./releases) section.
+Or simply download a pre-built jar from [releases](https://github.com/cominvent/request-sanitizer-component/releases) section.
 
 Copy the jar to a place where Solr can find it:
 
