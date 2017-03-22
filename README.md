@@ -3,11 +3,16 @@ A search component for Solr to sanitize request parameter input
 
 ## Build and install
 
-Build with maven and place jar in a place where Solr can find it:
+Build with maven:
+
+    mvn package
+
+Or simply download a pre-built jar from [releases](./releases) section.
+
+Copy the jar to a place where Solr can find it:
 
     SOLR_HOME=/path/to/solr/home
     mkdir $SOLR_HOME/lib
-    mvn package
     cp target/RequestSanitizerComponent-1.0.jar $SOLR_HOME/lib/
 
 ### solrconfig.xml
