@@ -1,6 +1,8 @@
 # RequestSanitizerComponent
 A search component for Solr to sanitize request parameter input
 
+[![Build Status](https://travis-ci.org/cominvent/request-sanitizer-component.svg?branch=master)](https://travis-ci.org/cominvent/request-sanitizer-component)
+
 ## Build and install
 
 Build with maven:
