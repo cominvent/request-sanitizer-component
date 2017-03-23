@@ -59,4 +59,11 @@ Multiple replacements through multiple http params
 
     sanitize=rows=>100:100&sanitize=offset=>10000:10000
 
+## Contributions
 
+The component is licensed under [the Apache License](LICENSE), so you can
+use it freely for anything :)
+
+I hope to extend the component with other useful sanitizing features, see issue tracker.
+
+Pull Requests welcome!
