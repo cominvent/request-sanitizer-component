@@ -9,7 +9,7 @@
     "releases": [
       {
         "version": "1.1.0",
-        "date": "Mar 22, 2017 9:00:35 PM",
+        "date": "Apr 21, 2017 0:00:00 AM",
         "url": "https://github.com/cominvent/request-sanitizer-component/releases/download/v1.1/request-sanitizer-1.1.0.jar",
         "requires": ">=6"
       }
