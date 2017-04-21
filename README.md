@@ -13,7 +13,7 @@ Copy the jar to a place where Solr can find it:
 
     SOLR_HOME=/path/to/solr/home
     mkdir $SOLR_HOME/lib
-    cp target/RequestSanitizerComponent-1.0.jar $SOLR_HOME/lib/
+    cp target/request-sanitizer-1.1.0.jar $SOLR_HOME/lib/
 
 ## Install
 
