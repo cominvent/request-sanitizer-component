@@ -1,0 +1,18 @@
+[
+  {
+    "id": "request-sanitizer",
+    "name": "Request Sanitizer Component",
+    "provider": "Cominvnent AS",
+    "projectUrl": "https://github.com/cominvent/request-sanitizer-component",
+    "description": "Solr Search Component which easily lets you conditionally override any HTTP parameter that comes from the client, based on a mapping scheme.",
+    "license": "Apache-2.0",
+    "releases": [
+      {
+        "version": "1.1.0",
+        "date": "Mar 22, 2017 9:00:35 PM",
+        "url": "https://github.com/cominvent/request-sanitizer-component/releases/download/v1.1/request-sanitizer-1.1.jar",
+        "requires": ">=6"
+      }
+    ]
+  }
+]

@@ -2,11 +2,16 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
+  <organization>
+    <name>Cominvent AS</name>
+    <url>http://www.cominvent.com/</url>
+  </organization>
+
   <groupId>com.cominvent.solr</groupId>
-  <artifactId>RequestSanitizerComponent</artifactId>
+  <artifactId>request-sanitizer</artifactId>
   <description>Solr Search Component which easily lets you conditionally override any HTTP parameter that comes from the
   client, based on a mapping scheme.</description>
-  <version>1.0</version>
+  <version>1.1.0</version>
   <packaging>jar</packaging>
 
   <name>RequestSanitizerComponent</name>
@@ -16,7 +21,30 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <solr.version>6.4.2</solr.version>
   </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>2.6</version>
+          <configuration>
+              <archive>
+                  <manifestEntries>
+                      <Plugin-Id>request-sanitizer</Plugin-Id>
+                      <Plugin-Version>${version}</Plugin-Version>
+                      <Plugin-Description>${description}</Plugin-Description>
+                      <Plugin-Requires>>=6.0.0</Plugin-Requires>
+                      <Plugin-Provider>${organization.name}</Plugin-Provider>
+                      <Plugin-License>Apache-2.0</Plugin-License>
+                  </manifestEntries>
+              </archive>
+          </configuration>
+      </plugin>
+    </plugins>
+  </build>
 
   <dependencies>
     <dependency>
@@ -40,7 +68,7 @@
   	<dependency>
 	    <groupId>org.apache.solr</groupId>
 	    <artifactId>solr-core</artifactId>
-	    <version>6.4.2</version>
+	    <version>${solr.version}</version>
 	</dependency>
   </dependencies>
 </project>

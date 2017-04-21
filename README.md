@@ -3,19 +3,22 @@ A search component for Solr to sanitize request parameter input
 
 [![Build Status](https://travis-ci.org/cominvent/request-sanitizer-component.svg?branch=master)](https://travis-ci.org/cominvent/request-sanitizer-component)
 
-## Build and install
+## Build
 
 Build with maven:
 
     mvn package
-
-Or simply download a pre-built jar from [releases](https://github.com/cominvent/request-sanitizer-component/releases) section.
 
 Copy the jar to a place where Solr can find it:
 
     SOLR_HOME=/path/to/solr/home
     mkdir $SOLR_HOME/lib
     cp target/RequestSanitizerComponent-1.0.jar $SOLR_HOME/lib/
+
+## Install
+
+Download a pre-built jar from [releases](https://github.com/cominvent/request-sanitizer-component/releases) section.
+and drop it in your `$SOLR_HOME/lib/`
 
 ### solrconfig.xml
 
@@ -67,3 +70,10 @@ use it freely for anything :)
 I hope to extend the component with other useful sanitizing features, see issue tracker.
 
 Pull Requests welcome!
+
+## ALPHA: Install usin bin/solr plugin install
+
+**NB:** works only with unreleased build, see https://s.apache.org/solr-plugin):
+
+    bin/solr plugin repo add cominvent https://github.com/cominvent/solr-plugins
+    bin/solr plugin install request-sanitizer
