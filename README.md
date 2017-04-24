@@ -2,7 +2,7 @@
 A search component for Solr to sanitize request parameter input
 
 [![Build Status](https://travis-ci.org/cominvent/request-sanitizer-component.svg?branch=master)](https://travis-ci.org/cominvent/request-sanitizer-component)
-[![Chat at https://gitter.im/cominvent](https://badges.gitter.im/cominvent.svg)]
+![Chat at https://gitter.im/cominvent](https://badges.gitter.im/cominvent.svg)
 
 ## Build
 
