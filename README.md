@@ -14,16 +14,9 @@ Copy the jar to a place where Solr can find it:
 
     SOLR_HOME=/path/to/solr/home
     mkdir $SOLR_HOME/lib
-    cp target/request-sanitizer-1.1.0.jar $SOLR_HOME/lib/
+    cp target/request-sanitizer-*.jar $SOLR_HOME/lib/
 
 ## Install
-
-**NB:** works only with [unreleased build](http://people.apache.org/~janhoy/dist/), see https://s.apache.org/solr-plugin:
-
-    bin/solr plugin repo add cominvent https://github.com/cominvent/solr-plugins
-    bin/solr plugin install request-sanitizer
-
-OR the old way:
 
 Download a pre-built jar from [releases](https://github.com/cominvent/request-sanitizer-component/releases) section.
 and drop it in your `$SOLR_HOME/lib/`

@@ -11,7 +11,7 @@
   <artifactId>request-sanitizer</artifactId>
   <description>Solr Search Component which easily lets you conditionally override any HTTP parameter that comes from the
   client, based on a mapping scheme.</description>
-  <version>1.1.0</version>
+  <version>1.2.0</version>
   <packaging>jar</packaging>
 
   <name>RequestSanitizerComponent</name>
@@ -21,7 +21,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <solr.version>6.4.2</solr.version>
+    <solr.version>8.6.3</solr.version>
   </properties>
 
   <build>
@@ -34,10 +34,10 @@
               <archive>
                   <manifestEntries>
                       <Plugin-Id>request-sanitizer</Plugin-Id>
-                      <Plugin-Version>${version}</Plugin-Version>
-                      <Plugin-Description>${description}</Plugin-Description>
+                      <Plugin-Version>${project.version}</Plugin-Version>
+                      <Plugin-Description>${project.description}</Plugin-Description>
                       <Plugin-Requires>>=6.0.0</Plugin-Requires>
-                      <Plugin-Provider>${organization.name}</Plugin-Provider>
+                      <Plugin-Provider>${project.organization.name}</Plugin-Provider>
                       <Plugin-License>Apache-2.0</Plugin-License>
                   </manifestEntries>
               </archive>
@@ -56,14 +56,8 @@
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
-      <version>1.7.21</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-simple</artifactId>
-      <version>1.7.12</version>
-      <scope>compile</scope>
+      <version>1.7.30</version>
+      <scope>provided</scope>
     </dependency>
   	<dependency>
 	    <groupId>org.apache.solr</groupId>
