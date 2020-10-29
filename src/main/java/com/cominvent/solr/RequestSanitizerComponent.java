@@ -195,12 +195,6 @@ public class RequestSanitizerComponent extends SearchComponent
     return "RequestSanitizerComponent";
   }
 
-  @Override
-  public String getVersion()
-  {
-    return "1.0";
-  }
-
   public class DefaultSolrParams extends SolrParams {
 
     protected final SolrParams params;
