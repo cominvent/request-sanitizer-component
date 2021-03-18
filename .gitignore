@@ -13,3 +13,4 @@ hs_err_pid*
 /RequestSanitizerComponent.iml
 .idea/
 /target/
+/repo/privatekey.pem

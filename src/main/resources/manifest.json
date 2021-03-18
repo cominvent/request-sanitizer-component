@@ -1,0 +1,21 @@
+{
+  "version-constraint": "8",
+  "plugins": [
+    {
+      "name": "request-sanitizer",
+      "setup-command": {
+        "path": "/api/collections/${collection}/config",
+        "payload": {"add-searchcomponent": {"name": "${NAME}", "class": "request-sanitizer:com.cominvent.solr.RequestSanitizerComponent"}},
+        "method": "POST"
+      },
+      "uninstall-command": {
+        "path": "/api/collections/${collection}/config",
+        "payload": {"delete-searchcomponent": "${NAME}"},
+        "method": "POST"
+      }
+    }
+  ],
+  "parameter-defaults": {
+    "NAME": "request-sanitizer"
+  }
+}

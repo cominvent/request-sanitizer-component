@@ -1,4 +1,4 @@
 language: java
 install: mvn clean package
 jdk:
-  - openjdk8
+  - openjdk11

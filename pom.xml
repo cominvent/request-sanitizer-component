@@ -19,9 +19,9 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <solr.version>8.6.3</solr.version>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+    <solr.version>8.8.1</solr.version>
   </properties>
 
   <build>
@@ -29,14 +29,14 @@
       <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
-          <version>2.6</version>
+          <version>3.2.0</version>
           <configuration>
               <archive>
                   <manifestEntries>
                       <Plugin-Id>request-sanitizer</Plugin-Id>
                       <Plugin-Version>${project.version}</Plugin-Version>
                       <Plugin-Description>${project.description}</Plugin-Description>
-                      <Plugin-Requires>>=6.0.0</Plugin-Requires>
+                      <Plugin-Requires>>=8.0.0</Plugin-Requires>
                       <Plugin-Provider>${project.organization.name}</Plugin-Provider>
                       <Plugin-License>Apache-2.0</Plugin-License>
                   </manifestEntries>
@@ -48,10 +48,10 @@
 
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.13.1</version>
-      <scope>test</scope>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.13.1</version>
+        <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
